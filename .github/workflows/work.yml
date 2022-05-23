@@ -2,17 +2,16 @@ name: setup-and-test
 on: push
 jobs:
   build:
-  runs-on: ${{ matrix.os }}
-  strategy:
-    matrix:
-      os: [ubuntu-latest, windows-latest, macos-latest]
-  steps:
-    - uses: actions/checkout@v3
-    - name: Setup Node 16.x
-      uses: actions/setup-node@v3
+    runs-on: ubuntu-latest
+    steps:
+    # клонируем репозиторий
+      - uses: actions/checkout@v2
+      - name: Setup Node 16.x
+      # устанавливаем Ноду дальше виз для 16 версии
+        uses: actions/setup-node@v1
       with:
-        node-version: 16.x
-        cache: npm
+        node-version: '16'
+        # запуск нужных команд
   - run: make setup
   - run: make test
   - run: make lint
