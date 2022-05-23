@@ -1,18 +1,18 @@
 name: setup-and-test
 on: push
 jobs:
-  build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: npm
-    - run: make setup
-    - run: make test
-    - run: make lint
+build:
+  runs-on: ${{ matrix.os }}
+  strategy:
+    matrix:
+      os: [ubuntu-latest, windows-latest, macos-latest]
+  steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: npm
+  - run: make setup
+  - run: make test
+  - run: make lint
