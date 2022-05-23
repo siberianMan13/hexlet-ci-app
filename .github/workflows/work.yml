@@ -1,5 +1,6 @@
 name: setup-and-test
 on: push
+
 jobs:
 build:
   runs-on: ${{ matrix.os }}
