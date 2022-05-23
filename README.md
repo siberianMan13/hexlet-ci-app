@@ -1,8 +1,5 @@
 # Example app for CI Hexlet course
 
-
-![Build Status](https://github.com/siberianMan13/hexlet-ci-app/workflows/setup-and-test/badge.svg?branch=master)](https://github.com/siberianMan13/hexlet-ci-app/actions/workflows/work.yml)
-
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
 ## System requirements
@@ -35,3 +32,6 @@ make lint
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=hexlet-ci-app)
 
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=hexlet-ci-app).
+
+![Build Status](https://github.com/siberianMan13/hexlet-ci-app/workflows/setup-and-test/badge.svg?branch=master)](https://github.com/siberianMan13/hexlet-ci-app/actions/workflows/work.yml)
+
